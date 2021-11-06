@@ -9,7 +9,7 @@ import { Image } from "@chakra-ui/react"
 export default function Navbar() {
     return (
         <Box w="100%" h="100%" bg="#2F303A" className="default-styles">
-            <AspectRatio maxW="4em" ratio={4 / 3}>
+            <AspectRatio maxW="4em" ratio={4 / 4}>
                 <Image src="/img/imprint-logo.jpeg" alt="naruto" objectFit="cover" />
             </AspectRatio>
         </Box>
