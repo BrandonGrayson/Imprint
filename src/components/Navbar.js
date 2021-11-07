@@ -9,7 +9,7 @@ export default function Navbar() {
         <header >
             <Box
              w="100%" 
-             h="100%" 
+             h="5rem" 
              className="default-styles" 
              display='flex' 
              justifyContent="space-between" 
