@@ -10,7 +10,6 @@ export default function Navbar() {
             <Box
              w="100%" 
              h="100%" 
-             bg="#2F303A" 
              className="default-styles" 
              display='flex' 
              justifyContent="space-between" 
