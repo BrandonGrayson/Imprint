@@ -5,7 +5,8 @@ const theme = extendTheme({
       global: {
         "html, body": {
           bg: "#2F303A",
-        },
+          fontFamily: 'Poppins'
+        }
       },
       colors: {
           brand: {
