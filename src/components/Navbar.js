@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Link } from '@chakra-ui/react';
 import '../css/Navbar.css';
 import { Image } from '@chakra-ui/react';
-import { List, ListItem, ListIcon, OrderedList, UnorderedList } from "@chakra-ui/react"
+import { UnorderedList } from "@chakra-ui/react"
 
 export default function Navbar() {
     return (
@@ -31,7 +31,7 @@ export default function Navbar() {
                      >Imprint
                      </Link>
                 </Box>
-                <nav className="main-nav">
+                <nav >
                     <UnorderedList display="flex">
                         <Link
                          _hover={{textDecoration: 'none', color: "#ababab"}} 
