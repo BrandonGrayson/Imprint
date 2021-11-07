@@ -2,10 +2,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.link {
-    text-decoration: none;
-}
-
-.main-nav Link:hover {
-    color: "#adadad"
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -6,8 +6,16 @@ import { List, ListItem, ListIcon, OrderedList, UnorderedList } from "@chakra-ui
 
 export default function Navbar() {
     return (
-        <header>
-            <Box w="100%" h="100%" bg="#2F303A" className="default-styles">
+        <header >
+            <Box
+             w="100%" 
+             h="100%" 
+             bg="#2F303A" 
+             className="default-styles" 
+             display='flex' 
+             justifyContent="space-between" 
+             alignItems='center'
+             >
                 <Box display="flex">
                     <Image
                      src="/img/imprint-logo.jpeg" 
@@ -25,11 +33,13 @@ export default function Navbar() {
                 </Box>
                 <nav className="main-nav">
                     <UnorderedList display="flex">
-                        <Link _hover={{textDecoration: 'none', color: "#ababab"}} > Discover </Link>
+                        <Link
+                         _hover={{textDecoration: 'none', color: "#ababab"}} 
+                         mr="10rem"
+                         > Discover </Link>
                     </UnorderedList>
                 </nav>
             </Box>
         </header>
-
     );
 }
