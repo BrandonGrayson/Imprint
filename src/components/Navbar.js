@@ -34,7 +34,7 @@ export default function Navbar() {
                     <UnorderedList display="flex">
                         <Link
                          _hover={{textDecoration: 'none', color: "#ababab"}} 
-                         mr="10rem"
+                       
                          > Discover </Link>
                     </UnorderedList>
                 </nav>
