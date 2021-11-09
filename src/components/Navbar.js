@@ -18,7 +18,7 @@ export default function Navbar() {
                 <Box display="flex">
                     <Image
                      src="/img/imprint-logo.jpeg" 
-                     alt="naruto" 
+                     alt="imprint logo" 
                      objectFit="cover" 
                      boxSize="2em" 
                      mx="1rem"

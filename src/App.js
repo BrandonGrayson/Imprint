@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import { ChakraProvider, Box } from "@chakra-ui/react"
 import theme from './extendTheme';
-
+import Hello from "../src/components/Home";
 
 
 function App() {
@@ -20,7 +20,8 @@ function App() {
        d="flex"
        flexDirection="column">
         <Navbar />
-        <Box style={{flexGrow: 1, backgroundColor: 'red'}}> Hello</Box>
+        {/* <Box style={{flexGrow: 1, backgroundColor: 'red'}}> Hello</Box> */}
+        <Hello />
       </Box>
 
     </ChakraProvider>
