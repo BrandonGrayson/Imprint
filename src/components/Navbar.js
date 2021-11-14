@@ -30,6 +30,7 @@ export default function Navbar() {
                      my=".2rem" 
                      _hover={{textDecoration: 'none', color: "#ababab"}}
                      as={RouteLink}
+                     to="/"
                      >Imprint
                      </Link>
                 </Box>
@@ -38,7 +39,7 @@ export default function Navbar() {
                         <Link
                         as={RouteLink}
                          _hover={{textDecoration: 'none', color: "#ababab"}} 
-                       
+                        to="/"
                          > Discover </Link>
                     </UnorderedList>
                 </nav>
