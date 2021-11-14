@@ -1,8 +1,10 @@
 import React from 'react';
 import { Box, Link } from '@chakra-ui/react';
-import '../css/Navbar.css';
 import { Image } from '@chakra-ui/react';
 import { UnorderedList } from "@chakra-ui/react"
+import { Link as RouteLink} from "react-router-dom"
+
+
 
 export default function Navbar() {
     return (
@@ -27,12 +29,14 @@ export default function Navbar() {
                      mx=".1rem" 
                      my=".2rem" 
                      _hover={{textDecoration: 'none', color: "#ababab"}}
+                     as={RouteLink}
                      >Imprint
                      </Link>
                 </Box>
                 <nav >
                     <UnorderedList display="flex">
                         <Link
+                        as={RouteLink}
                          _hover={{textDecoration: 'none', color: "#ababab"}} 
                        
                          > Discover </Link>
