@@ -18,8 +18,6 @@ export default function Layout() {
           d="flex"
           flexDirection="column">
           <Navbar />
-
-          
         </Box>
       </ChakraProvider>
     )
