@@ -39,7 +39,7 @@ export default function Navbar() {
                         <Link
                         as={RouteLink}
                          _hover={{textDecoration: 'none', color: "#ababab"}} 
-                        to="/"
+                        to="/discover"
                          > Discover </Link>
                     </UnorderedList>
                 </nav>
