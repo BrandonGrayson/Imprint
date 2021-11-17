@@ -1,8 +1,13 @@
 import React from "react"
 import { AspectRatio, Box, Image, Text } from "@chakra-ui/react"
+import Test from "./Test"
 
-// https://www.youtube.com/embed/g3mVwt0B6G4
-// chad https://www.youtube.com/embed/W-u6E8F0VcE
+
+function generateID () {
+    return '_' + Math.random().toString(36).substr(2, 9)
+}
+
+    // generate an Id for each item
 
 const ArtistsData = [
     {
@@ -94,7 +99,7 @@ const ArtistsData = [
 export default function Discover() {
     const [video, setVideo] = React.useState("https://www.youtube.com/embed/dzrQCsJzr70")
     return (
-        <div>
+        <Box>
             <AspectRatio
                 maxW="90vw"
                 maxH="90vh"
@@ -108,9 +113,11 @@ export default function Discover() {
 
             <Text>Artists</Text>
 
+            <Test />
+
             <Box boxSize="sm" mt="3em">
                 <Image src="/img/artists/isaiahrashad2.jpeg" alt="Isaih Rashad" />
             </Box>
-        </div>
+        </Box>
     )
 }
