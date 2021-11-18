@@ -40,7 +40,15 @@ export default function Navbar() {
                         as={RouteLink}
                          _hover={{textDecoration: 'none', color: "#ababab"}} 
                         to="/discover"
-                         > Discover </Link>
+                         > Discover 
+                        </Link>
+                        <Link
+                         pl=".5rem"
+                         as={RouteLink}
+                         _hover={{textDecoration: 'none', color: "#ababab"}}
+                         to="/tvshows"
+                         >TV Shows
+                        </Link>
                     </UnorderedList>
                 </nav>
             </Box>

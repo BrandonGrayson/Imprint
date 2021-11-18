@@ -4,6 +4,7 @@ import Home from "./components/Home"
 import Discover from "./components/Discover";
 import theme from "./extendTheme"
 import Navbar from "./components/Navbar"
+import Rick from "./components/Rick";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/discover" element={<Discover />} />
+            <Route path="/tvshows" element={<Rick />} />
           </Routes>
         </Box>
       </ChakraProvider>
