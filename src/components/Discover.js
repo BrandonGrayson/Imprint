@@ -110,10 +110,22 @@ function getArtistData() {
 
 export default function Discover() {
     const [video, setVideo] = React.useState("https://www.youtube.com/embed/dzrQCsJzr70")
+    const [spotlightVideos, setSpotlightVideos] = React.useState(null)
 
     const handleChange = () => {
-
+        
     }
+
+    React.useEffect(() => {
+        
+        const id = window.setTimeout(() => {
+            setSpotlightVideos(getArtistData())
+        }, 3000)
+
+        console.log(spotlightVideos)
+
+        return () => window.clearTimeout(id)
+    }, [])
     return (
         <>
             <Box
