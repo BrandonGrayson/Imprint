@@ -1,21 +1,51 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Text, List, ListItem } from "@chakra-ui/react"
 import React from "react"
 
-export default function Rick() {
+// function getData() {
+//     return fetch("https://rickandmortyapi.com/api/character/?page=2")
+//     .then((res) => res.json())
+//     .then((data) => {
+//         return data
+//     })
+// }
 
-    function getData() {
-        return fetch('https://rickandmortyapi.com/api')
-        .then((res) => res.json())
-        .then((data) => console.log(data))
-    }
+function Loading() {
+    return <p>Loading...</p>
+}
+
+export default function Rick() {
+    const [characters, setCharacters] = React.useState([])
+    const [loading, setLoading] = React.useState(true)
 
     React.useEffect(() => {
-        getData()
-    })
+        return fetch("https://rickandmortyapi.com/api/character/?page=2")
+            .then((res) => res.json())
+            .then((data) => {
+                setCharacters(data)
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
+    }, [])
+
+    if (loading) {
+        return <Loading />
+    }
+
+    console.log(characters)
+
     return (
         <Box>
-            <Text>Rick And Morty</Text>
+            <List>
+                {
+                    characters.results.map(({name}) => {
+                        return <ListItem>{name}</ListItem>
+                    })
+                }
+            </List>
         </Box>
     )
-
 }
