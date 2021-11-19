@@ -1,12 +1,13 @@
 import { Box, List, ListItem } from "@chakra-ui/react"
 import React from "react"
+import Card from "./Card"
 
 function Loading() {
     return <p>Loading...</p>
 }
 
 export default function Rick() {
-    const [characters, setCharacters] = React.useState(null)
+    const [characters, setCharacters] = React.useState([])
     const [loading, setLoading] = React.useState(true)
 
     React.useEffect(() => {
@@ -39,6 +40,7 @@ export default function Rick() {
                     })
                 }
             </List>
+            <Card characters={characters} />
         </Box>
     )
 }
