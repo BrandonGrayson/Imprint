@@ -1,8 +1,7 @@
-import { Box, List, ListItem } from "@chakra-ui/react"
+import { Box, List} from "@chakra-ui/react"
 import React from "react"
 import Card from "./Card"
-
-import UsersInput from "./UsersInput"
+import IsLoading from './Loading'
 
 function Loading() {
     return <p>Loading...</p>
@@ -34,17 +33,11 @@ export default function Rick() {
 
     return (
         <Box>
-          
+
             <List>
-                {
-                    characters.results.map(({name, id}) => {
-                        return <ListItem
-                         key={id}>{name}</ListItem>
-                    })
-                }
+                <Card characters={characters} />
             </List>
-            <Card characters={characters}/>
-            {/* <UsersInput /> */}
+            <IsLoading />
         </Box>
     )
 }
