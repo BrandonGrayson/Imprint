@@ -2,6 +2,8 @@ import { Box, List, ListItem } from "@chakra-ui/react"
 import React from "react"
 import Card from "./Card"
 
+import UsersInput from "./UsersInput"
+
 function Loading() {
     return <p>Loading...</p>
 }
@@ -32,6 +34,7 @@ export default function Rick() {
 
     return (
         <Box>
+          
             <List>
                 {
                     characters.results.map(({name, id}) => {
@@ -40,7 +43,8 @@ export default function Rick() {
                     })
                 }
             </List>
-            <Card characters={characters} />
+            <Card characters={characters}/>
+            {/* <UsersInput /> */}
         </Box>
     )
 }

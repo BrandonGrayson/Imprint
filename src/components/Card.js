@@ -1,9 +1,20 @@
-import {Box, Text} from "@chakra-ui/react"
+import React from "react"
+import { Box, List, ListItem } from "@chakra-ui/react"
+
 export default function Card(props) {
-    console.log(props) 
+    console.log(props)
     return (
         <Box>
-            <Text>Card Component</Text>
+            <List>
+                {props.characters.results.map(({ name, id }) => {
+                   return <ListItem
+                        key={id}
+                    >
+                        {name}
+                    </ListItem>
+                })}
+                <h1>Card Component</h1>
+            </List>
         </Box>
     )
 }
