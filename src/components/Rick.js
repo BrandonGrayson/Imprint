@@ -3,9 +3,7 @@ import React from "react"
 import Card from "./Card"
 import IsLoading from './Loading'
 
-function Loading() {
-    return <p>Loading...</p>
-}
+
 
 export default function Rick() {
     const [characters, setCharacters] = React.useState([])
@@ -25,6 +23,10 @@ export default function Rick() {
             })
     }, [])
 
+    function Loading() {
+        return <p>Loading...</p>
+    }
+
     if (loading) {
         return <Loading />
     }
@@ -33,7 +35,6 @@ export default function Rick() {
 
     return (
         <Box>
-
             <List>
                 <Card characters={characters} />
             </List>
