@@ -5,6 +5,8 @@ import Discover from "./components/Discover";
 import theme from "./extendTheme"
 import Navbar from "./components/Navbar"
 import Rick from "./components/Rick";
+import MainPost from "./components/MainPost";
+import ChildPost from "./components/ChildPost";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/discover" element={<Discover />} />
             <Route path="/tvshows" element={<Rick />} />
+            <Route path="/blog" element={<MainPost />} >
+              <Route path=":id" element={<ChildPost />} />
+            </Route>
           </Routes>
         </Box>
       </ChakraProvider>

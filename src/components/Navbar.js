@@ -49,6 +49,13 @@ export default function Navbar() {
                          to="/tvshows"
                          >TV Shows
                         </Link>
+                        <Link
+                         pl=".5rem"
+                         as={RouteLink}
+                         _hover={{textDecoration: 'none', color: "#ababab"}}
+                         to="/blog"
+                         >Blog
+                        </Link>
                     </UnorderedList>
                 </nav>
             </Box>
