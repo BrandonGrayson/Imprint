@@ -16,19 +16,25 @@ export default function MainPost() {
 
     const [post, setPost] = React.useState([])
     const [index, setIndex] = React.useState(1)
+    
 
     React.useEffect(() => {
-        fetchPost(1)
+        fetchPost(index)
             .then((res) => setPost(res))
-    }, [])
+    }, [index])
+
+    const nextPost = () => {
+        setIndex((index) => index + 1)
+    }
 
     console.log(post)
+    console.log("index is: " + {index})
     console.log(`Template Literal`)
     return (
         <Box>
             <Text>This is the Main Blog Component</Text>
             <Link as={RouteLink} to={`/blog/${index}`}>
-                <Button>View Post</Button>
+                <Button onClick={nextPost}>View Post</Button>
             </Link>
 
             <Text>{post.title}</Text>
