@@ -29,7 +29,6 @@ export default function MainPost() {
 
     console.log(post)
     console.log("index is: " + {index})
-    console.log(`Template Literal`)
     return (
         <Box>
             <Text>This is the Main Blog Component</Text>

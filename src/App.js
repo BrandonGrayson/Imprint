@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar"
 import Rick from "./components/Rick";
 import MainPost from "./components/MainPost";
 import ChildPost from "./components/ChildPost";
+import Login from "./components/Login"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/blog" element={<MainPost />} >
               <Route path=":id" element={<ChildPost />} />
             </Route>
+            <Route path="/login" element={<Login authed={false}/>} />
           </Routes>
         </Box>
       </ChakraProvider>

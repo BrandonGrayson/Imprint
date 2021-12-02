@@ -56,6 +56,13 @@ export default function Navbar() {
                          to="/blog"
                          >Blog
                         </Link>
+                        <Link
+                         pl=".5rem"
+                         as={RouteLink}
+                         _hover={{textDecoration: 'none', color: "#ababab"}}
+                         to="/login"
+                         >Login
+                        </Link>
                     </UnorderedList>
                 </nav>
             </Box>
