@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Link } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react';
-import { UnorderedList, } from "@chakra-ui/react"
+import { UnorderedList} from "@chakra-ui/react"
 import { Link as RouteLink} from "react-router-dom"
 
 

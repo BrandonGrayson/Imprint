@@ -5,7 +5,7 @@ export default function Card(props) {
     console.log(props)
     return (
         <Box>
-            <List>
+            {/* <List>
                 {props.characters.results.map(({ name, id }) => {
                    return <ListItem
                         key={id}
@@ -14,7 +14,7 @@ export default function Card(props) {
                     </ListItem>
                 })}
                 <h1>Card Component</h1>
-            </List>
+            </List> */}
         </Box>
     )
 }

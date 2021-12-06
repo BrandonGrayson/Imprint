@@ -8,8 +8,15 @@ import Rick from "./components/Rick";
 import MainPost from "./components/MainPost";
 import ChildPost from "./components/ChildPost";
 import Login from "./components/Login"
+import UserInput from "./components/UsersInput"
+import PropsChildren from "./components/PropsChildren"
 
 function App() {
+  const authed = true
+  const user = {
+    name: "Joe",
+    username: "Joe.username"
+  }
   return (
     <>
       <ChakraProvider theme={theme}>
@@ -24,6 +31,8 @@ function App() {
           d="flex"
           flexDirection="column">
           <Navbar />
+          {/* <Login authentication={authed} user={user} /> */}
+          <UserInput authed={authed} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/discover" element={<Discover />} />

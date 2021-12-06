@@ -1,14 +1,16 @@
 import React from 'react'
 import { Box, Text} from "@chakra-ui/react"
 
-export default function Login({authed}) {
+export default function Login(props) {
+
+    console.log(props)
 
     return (
         <Box>
-            <Text> 
+            {/* <Text> 
                 {
-                    authed ? "Login Normally" : "Register"
-                }</Text>
+                    authentication ? "Login Normally" : "Register"
+                }</Text> */}
         </Box>
     )
 }
